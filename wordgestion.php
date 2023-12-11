@@ -20,9 +20,10 @@ $censored = $_GET['censored'];
     <p><?php echo strlen($paragraph); ?></p>
 
     <p><?php 
-    echo str_replace($censored, '***', $paragraph);
+    $new_paragraph = str_replace($censored, '***', $paragraph);
+    echo $new_paragraph;
     ?></p>
-    <p><?php echo strlen($paragraph); ?></p>
+    <p><?php echo strlen($new_paragraph); ?></p>
 
     
 </body>
